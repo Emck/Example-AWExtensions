@@ -11,6 +11,7 @@
 		88D833732A10B2D400C3EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D833722A10B2D400C3EE1E /* Assets.xcassets */; };
 		88D833762A10B2D400C3EE1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D833742A10B2D400C3EE1E /* MainMenu.xib */; };
 		88D833782A10B2D400C3EE1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D833772A10B2D400C3EE1E /* main.m */; };
+		88D833812A10B69400C3EE1E /* AWExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 88D833802A10B69400C3EE1E /* AWExtensions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D833812A10B69400C3EE1E /* AWExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,9 @@
 			dependencies = (
 			);
 			name = ExampleAWExtensions;
+			packageProductDependencies = (
+				88D833802A10B69400C3EE1E /* AWExtensions */,
+			);
 			productName = ExampleAWExtensions;
 			productReference = 88D8336C2A10B2D300C3EE1E /* ExampleAWExtensions.app */;
 			productType = "com.apple.product-type.application";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 88D833632A10B2D300C3EE1E;
+			packageReferences = (
+				88D8337F2A10B69400C3EE1E /* XCRemoteSwiftPackageReference "Package-AWExtensions" */,
+			);
 			productRefGroup = 88D8336D2A10B2D300C3EE1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -332,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88D8337F2A10B69400C3EE1E /* XCRemoteSwiftPackageReference "Package-AWExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Emck/Package-AWExtensions";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88D833802A10B69400C3EE1E /* AWExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88D8337F2A10B69400C3EE1E /* XCRemoteSwiftPackageReference "Package-AWExtensions" */;
+			productName = AWExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88D833642A10B2D300C3EE1E /* Project object */;
 }

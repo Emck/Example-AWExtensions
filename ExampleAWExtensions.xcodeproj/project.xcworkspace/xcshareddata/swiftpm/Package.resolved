@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "package-awextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Emck/Package-AWExtensions",
+      "state" : {
+        "branch" : "main",
+        "revision" : "57c93a61d2f0071975f1b08730b54b8bafc09f4c"
+      }
+    }
+  ],
+  "version" : 2
+}
