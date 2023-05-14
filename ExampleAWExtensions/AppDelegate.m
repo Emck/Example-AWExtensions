@@ -28,5 +28,17 @@
     return YES;
 }
 
+#pragma mark - IBAction
+- (IBAction)clickLaunchAtLogin:(id)sender {
+    NSLog(@"clickLaunchAtLogin %ld", ((NSButton *)sender).state);
+}
+
+- (IBAction)clickShowDockIcon:(id)sender {
+    NSLog(@"clickShowDockIcon %ld", ((NSButton *)sender).state);
+}
+
+- (IBAction)clickShowStatusBarIcon:(id)sender {
+    NSLog(@"clickShowStatusBarIcon %ld", ((NSButton *)sender).state);
+}
 
 @end
