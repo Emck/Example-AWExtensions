@@ -11,12 +11,26 @@
 		887AEFED2A164D3E00D1DB0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 887AEFEC2A164D3E00D1DB0F /* Assets.xcassets */; };
 		887AEFF02A164D3E00D1DB0F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887AEFEE2A164D3E00D1DB0F /* MainMenu.xib */; };
 		887AEFF22A164D3E00D1DB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 887AEFF12A164D3E00D1DB0F /* main.m */; };
+		887AEFF82A164F9D00D1DB0F /* LoginItemsHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 887AEFE72A164D3D00D1DB0F /* LoginItemsHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		88D833712A10B2D300C3EE1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D833702A10B2D300C3EE1E /* AppDelegate.m */; };
 		88D833732A10B2D400C3EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D833722A10B2D400C3EE1E /* Assets.xcassets */; };
 		88D833762A10B2D400C3EE1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D833742A10B2D400C3EE1E /* MainMenu.xib */; };
 		88D833782A10B2D400C3EE1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D833772A10B2D400C3EE1E /* main.m */; };
 		88D833812A10B69400C3EE1E /* AWExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 88D833802A10B69400C3EE1E /* AWExtensions */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		887AEFF72A164F6F00D1DB0F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				887AEFF82A164F9D00D1DB0F /* LoginItemsHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		887AEFE72A164D3D00D1DB0F /* LoginItemsHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginItemsHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +139,7 @@
 				88D833682A10B2D300C3EE1E /* Sources */,
 				88D833692A10B2D300C3EE1E /* Frameworks */,
 				88D8336A2A10B2D300C3EE1E /* Resources */,
+				887AEFF72A164F6F00D1DB0F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -260,6 +275,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaw.ExampleAWExtensions.LoginItemsHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
@@ -285,6 +301,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaw.ExampleAWExtensions.LoginItemsHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;

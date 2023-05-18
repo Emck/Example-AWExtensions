@@ -65,7 +65,7 @@
 
 #pragma mark - IBAction
 - (IBAction)clickLaunchAtLogin:(id)sender {
-    NSLog(@"clickLaunchAtLogin %ld", ((NSButton *)sender).state);
+    [NSApplication.sharedApplication postLaunchAtLoginEvent:sender];
 }
 
 - (IBAction)clickShowDockIcon:(id)sender {
