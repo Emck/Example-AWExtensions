@@ -56,6 +56,7 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     [[NSUserDefaults standardUserDefaults] synchronize];
+    [NSApplication.sharedApplication clean];    // cleanup
 }
 
 
