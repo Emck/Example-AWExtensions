@@ -15,6 +15,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="LaunchAtLogin" destination="TfK-tq-DUB" id="ZHQ-at-gbP"/>
+                <outlet property="ShowDockIcon" destination="zNf-fx-ANM" id="rCr-o1-RGM"/>
+                <outlet property="ShowStatusBarIcon" destination="opS-h0-f4B" id="LxJ-t0-CRs"/>
+                <outlet property="menuBarMenu" destination="01P-Qc-rWp" id="od0-dO-veB"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -735,5 +739,19 @@
             </view>
             <point key="canvasLocation" x="200" y="400"/>
         </window>
+        <menu id="01P-Qc-rWp" userLabel="StatusBar Menu">
+            <items>
+                <menuItem title="About Example" id="eGG-7b-CiK" userLabel="About">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="G3P-9G-naG"/>
+                <menuItem title="Quit Example" keyEquivalent="q" id="hJg-Ci-d5E">
+                    <connections>
+                        <action selector="terminate:" target="-1" id="Ws4-kh-ZVr"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="600" y="262"/>
+        </menu>
     </objects>
 </document>
