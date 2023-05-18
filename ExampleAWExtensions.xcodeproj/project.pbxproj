@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		887AEFEB2A164D3D00D1DB0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 887AEFEA2A164D3D00D1DB0F /* AppDelegate.m */; };
+		887AEFED2A164D3E00D1DB0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 887AEFEC2A164D3E00D1DB0F /* Assets.xcassets */; };
+		887AEFF02A164D3E00D1DB0F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887AEFEE2A164D3E00D1DB0F /* MainMenu.xib */; };
+		887AEFF22A164D3E00D1DB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 887AEFF12A164D3E00D1DB0F /* main.m */; };
 		88D833712A10B2D300C3EE1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D833702A10B2D300C3EE1E /* AppDelegate.m */; };
 		88D833732A10B2D400C3EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D833722A10B2D400C3EE1E /* Assets.xcassets */; };
 		88D833762A10B2D400C3EE1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D833742A10B2D400C3EE1E /* MainMenu.xib */; };
@@ -15,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		887AEFE72A164D3D00D1DB0F /* LoginItemsHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginItemsHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		887AEFE92A164D3D00D1DB0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		887AEFEA2A164D3D00D1DB0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		887AEFEC2A164D3E00D1DB0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		887AEFEF2A164D3E00D1DB0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		887AEFF12A164D3E00D1DB0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		887AEFF32A164D3E00D1DB0F /* LoginItemsHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginItemsHelper.entitlements; sourceTree = "<group>"; };
 		88D8336C2A10B2D300C3EE1E /* ExampleAWExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleAWExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D8336F2A10B2D300C3EE1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88D833702A10B2D300C3EE1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -25,6 +36,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		887AEFE42A164D3D00D1DB0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88D833692A10B2D300C3EE1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +54,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		887AEFE82A164D3D00D1DB0F /* LoginItemsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				887AEFE92A164D3D00D1DB0F /* AppDelegate.h */,
+				887AEFEA2A164D3D00D1DB0F /* AppDelegate.m */,
+				887AEFEC2A164D3E00D1DB0F /* Assets.xcassets */,
+				887AEFEE2A164D3E00D1DB0F /* MainMenu.xib */,
+				887AEFF12A164D3E00D1DB0F /* main.m */,
+				887AEFF32A164D3E00D1DB0F /* LoginItemsHelper.entitlements */,
+			);
+			path = LoginItemsHelper;
+			sourceTree = "<group>";
+		};
 		88D833632A10B2D300C3EE1E = {
 			isa = PBXGroup;
 			children = (
 				88D8336E2A10B2D300C3EE1E /* ExampleAWExtensions */,
+				887AEFE82A164D3D00D1DB0F /* LoginItemsHelper */,
 				88D8336D2A10B2D300C3EE1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				88D8336C2A10B2D300C3EE1E /* ExampleAWExtensions.app */,
+				887AEFE72A164D3D00D1DB0F /* LoginItemsHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +101,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		887AEFE62A164D3D00D1DB0F /* LoginItemsHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 887AEFF62A164D3E00D1DB0F /* Build configuration list for PBXNativeTarget "LoginItemsHelper" */;
+			buildPhases = (
+				887AEFE32A164D3D00D1DB0F /* Sources */,
+				887AEFE42A164D3D00D1DB0F /* Frameworks */,
+				887AEFE52A164D3D00D1DB0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginItemsHelper;
+			productName = LoginItemsHelper;
+			productReference = 887AEFE72A164D3D00D1DB0F /* LoginItemsHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 		88D8336B2A10B2D300C3EE1E /* ExampleAWExtensions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88D8337C2A10B2D400C3EE1E /* Build configuration list for PBXNativeTarget "ExampleAWExtensions" */;
@@ -97,6 +147,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					887AEFE62A164D3D00D1DB0F = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					88D8336B2A10B2D300C3EE1E = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -119,11 +172,21 @@
 			projectRoot = "";
 			targets = (
 				88D8336B2A10B2D300C3EE1E /* ExampleAWExtensions */,
+				887AEFE62A164D3D00D1DB0F /* LoginItemsHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		887AEFE52A164D3D00D1DB0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887AEFED2A164D3E00D1DB0F /* Assets.xcassets in Resources */,
+				887AEFF02A164D3E00D1DB0F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88D8336A2A10B2D300C3EE1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +199,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		887AEFE32A164D3D00D1DB0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887AEFF22A164D3E00D1DB0F /* main.m in Sources */,
+				887AEFEB2A164D3D00D1DB0F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88D833682A10B2D300C3EE1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +220,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		887AEFEE2A164D3E00D1DB0F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				887AEFEF2A164D3E00D1DB0F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		88D833742A10B2D400C3EE1E /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -159,6 +239,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		887AEFF42A164D3E00D1DB0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginItemsHelper/LoginItemsHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avaw.ExampleAWExtensions.LoginItemsHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		887AEFF52A164D3E00D1DB0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginItemsHelper/LoginItemsHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avaw.ExampleAWExtensions.LoginItemsHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 		88D8337A2A10B2D400C3EE1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -321,6 +451,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		887AEFF62A164D3E00D1DB0F /* Build configuration list for PBXNativeTarget "LoginItemsHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887AEFF42A164D3E00D1DB0F /* Debug */,
+				887AEFF52A164D3E00D1DB0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		88D833672A10B2D300C3EE1E /* Build configuration list for PBXProject "ExampleAWExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
